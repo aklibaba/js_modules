@@ -1,5 +1,8 @@
-import '../styles/image_viewer.css'
-const image = document.createElement('img');
-image.src = "http://lorempixel.com/400/200/";
-console.log(image);
-document.body.appendChild(image);
+import '../styles/image_viewer.css';
+import small from '../assets/image1.jpg';
+
+export default () => {
+  const image = document.createElement('img');
+  image.src = small;
+  document.body.appendChild(image);
+}
